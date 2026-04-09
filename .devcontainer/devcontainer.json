@@ -1,0 +1,27 @@
+{
+  "name": "open-claw",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "forwardPorts": [80, 443, 3000, 5000, 8000],
+  "portsAttributes": {
+    "80": {
+      "label": "HTTP",
+      "onAutoForward": "notify"
+    },
+    "443": {
+      "label": "HTTPS",
+      "onAutoForward": "notify"
+    },
+    "3000": {
+      "label": "Frontend Dev Server",
+      "onAutoForward": "notify"
+    },
+    "5000": {
+      "label": "API Server",
+      "onAutoForward": "notify"
+    },
+    "8000": {
+      "label": "Web Server",
+      "onAutoForward": "notify"
+    }
+  }
+}
